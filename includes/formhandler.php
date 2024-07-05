@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "Favourite Pet: $favpet";
     echo "<br>";
 
-    //header("Location: ../index.php");
+    header("Location: ../index.php");
 } else {
     header("Location: ../index.php");
 }
