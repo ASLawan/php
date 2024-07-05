@@ -7,7 +7,7 @@ $dbname = "my_first_database";
 
 try {
     $conn = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPION);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch(PDOExeception $e){
     echo "Connection failed: " . $e->getMessage();
 }

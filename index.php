@@ -67,6 +67,22 @@
             <br>
             <button type="submit">Submit</button>
         </form> -->
+
+        <!-- LOGIN FORM -->
+         <h1>Sign Up Form</h1>
+    <form action="includes/signup.php" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="" placeholder="username">
+        <br>
+        <label for="passwd">Passwod:</label>
+        <input type="password" name="password" id="" placeholder="Password">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="" placeholder="email"> 
+        <br>
+        <button type="submit">Sign Up</button>
+    </form>
+
     <?php
         // function sayHi($name){
         //     echo "Hi $name!";
@@ -164,54 +180,56 @@
 
         // ARRAYS
 
-        $myNames = ["Lawan", "Austin", "Sewoyebaa", "Nitsua", "Nawal"];
+        // $myNames = ["Lawan", "Austin", "Sewoyebaa", "Nitsua", "Nawal"];
 
-        $arrLen = count($myNames);
+        // $arrLen = count($myNames);
         
-        // WHILE LOOP
-        $i = 0;
+        // // WHILE LOOP
+        // $i = 0;
 
-        echo "While Loop <br>";
-        while($i < $arrLen){
+        // echo "While Loop <br>";
+        // while($i < $arrLen){
 
-            $letters = strlen($myNames[$i]);
-            echo "The name: $myNames[$i] is $letters letters long.<br>";
-            $i++;
-        }
+        //     $letters = strlen($myNames[$i]);
+        //     echo "The name: $myNames[$i] is $letters letters long.<br>";
+        //     $i++;
+        // }
 
 
-        // FOR LOOP
-        echo "<br>";
-        echo "For Loop <br>";
-        for ($i = 0; $i < $arrLen; $i++){
-            $letters = strlen($myNames[$i]);
-            echo "Name: $myNames[$i], Letters: $letters <br>";
-        }
+        // // FOR LOOP
+        // echo "<br>";
+        // echo "For Loop <br>";
+        // for ($i = 0; $i < $arrLen; $i++){
+        //     $letters = strlen($myNames[$i]);
+        //     echo "Name: $myNames[$i], Letters: $letters <br>";
+        // }
 
-        // FOREACH LOOP
+        // // FOREACH LOOP
 
-        echo "<br>Foreach Loop<br>";
-        foreach ($myNames as $name){
-            echo "$name <br>";
-        }
+        // echo "<br>Foreach Loop<br>";
+        // foreach ($myNames as $name){
+        //     echo "$name <br>";
+        // }
 
-        // echo print_r($myNames);
+        // // echo print_r($myNames);
 
-        // ASSOCIATIVE ARRAYS
+        // // ASSOCIATIVE ARRAYS
 
-        $nicknames = [
-            "Kingsley" => "The Game",
-            "Thelma" => "Joe",
-            "Desmon" => "Doc",
-            "Patrick" => "Paddy",
-            "Joel" => "Gha",
-            "Echo" => "That Capo"
-        ];
+        // $nicknames = [
+        //     "Kingsley" => "The Game",
+        //     "Thelma" => "Joe",
+        //     "Desmon" => "Doc",
+        //     "Patrick" => "Paddy",
+        //     "Joel" => "Gha",
+        //     "Echo" => "That Capo"
+        // ];
 
-        echo "<br>Associative Array<br>";
-        foreach ($nicknames as $key => $value){
-            echo "$key's nickname is $value<br>";
-        }
+        // echo "<br>Associative Array<br>"
+        // foreach ($nicknames as $key => $value){
+        //     echo "$key's nickname is $value<br>";
+        // }
+
+        // CONNECT TO DATABASE
     ?>
 
        
