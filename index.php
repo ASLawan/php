@@ -69,7 +69,7 @@
         </form> -->
 
         <!-- LOGIN FORM -->
-         <h1>Sign Up Form</h1>
+         <!-- <h1>Sign Up Form</h1>
     <form action="includes/signup.php" method="POST">
         <label for="username">Username:</label>
         <input type="text" name="username" id="" placeholder="username">
@@ -81,6 +81,35 @@
         <input type="email" name="email" id="" placeholder="email"> 
         <br>
         <button type="submit">Sign Up</button>
+    </form> -->
+
+       <!-- LOGIN FORM -->
+       <h1>Update User Account</h1>
+    <form action="includes/update.php" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="" placeholder="username">
+        <br>
+        <label for="passwd">Passwod:</label>
+        <input type="password" name="password" id="" placeholder="Password">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="" placeholder="email"> 
+        <br>
+        <button type="submit">Update Account</button>
+    </form>
+    <br>
+    <br>
+    <br>
+       <!-- LOGIN FORM -->
+       <h1>Delete User Account</h1>
+    <form action="includes/delete.php" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="" placeholder="username">
+        <br>
+        <label for="passwd">Passwod:</label>
+        <input type="password" name="password" id="" placeholder="Password"> 
+        <br>
+        <button type="submit">Delete Account</button>
     </form>
 
     <?php
