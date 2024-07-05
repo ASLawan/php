@@ -112,6 +112,14 @@
         <button type="submit">Delete Account</button>
     </form>
 
+       <!-- LOGIN FORM -->
+       <h1>Serach User Account</h1>
+    <form action="search.php" method="POST">
+        <label for="username">Search for user:</label>
+        <input type="text" name="usersearch" id="" placeholder="search">
+        <button type="submit">Search</button>
+    </form>
+
     <?php
         // function sayHi($name){
         //     echo "Hi $name!";
