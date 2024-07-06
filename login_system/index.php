@@ -1,7 +1,7 @@
 <?php
     require_once 'includes/config.session.inc.php';
     require_once 'includes/signup_view.inc.php';
-
+    require_once 'includes/login_view.inc.php';
 ?>
 
 <!DOCTYPE html>
@@ -12,6 +12,11 @@
     <title>PHP Login System</title>
 </head>
 <body>
+    <h3>
+        <?php
+            output_username();
+        ?>
+    </h3>
     <h3>Signup</h3>
     <form action="includes/signup.inc.php" method="POST">
         <!-- <label for="username">Username:</label>
@@ -29,6 +34,10 @@
         <button type="submit">Signup</button>
     </form>
 
+    <?php
+        check_signup_errors();
+    ?>
+
     <h3>Login</h3>
     <form action="includes/login.inc.php" method="POST">
         <label for="username">Username:</label>
@@ -41,7 +50,12 @@
     </form>
 
     <?php
-        check_signup_errors();
+        check_login_errors();
     ?>
+
+<h3>Logout</h3>
+    <form action="includes/logout.inc.php" method="POST">
+        <button type="submit">Logout</button>
+    </form>
 </body>
 </html>
